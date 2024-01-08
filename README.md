@@ -1,3 +1,16 @@
+# GPT-2 examples
+
+The changes in this branch were made for a specific presentation and highlight how
+adaptable the code is. The changes are not intended for more general use.
+
+Example for running inside a docker container:
+```
+docker run -it --rm --name llm-viz -v "$PWD":/usr/src/app -w /usr/src/app -p 3002:3002 node:latest bash
+yarn
+yarn dev -p 3002
+```
+
+The original README text follows verbatim.
 
 # Brendan Bycroft's Home Page & Projects
 

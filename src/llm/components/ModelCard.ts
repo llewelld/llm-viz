@@ -94,9 +94,9 @@ export function drawModelCard(state: IProgramState, layout: IGptModelLayout, tit
 
     // addLine(render.lineRender, thick, borderColor, new Vec3(tl.x, tl.y + paramHeight), new Vec3(br.x, tl.y + paramHeight), n, mtx);
 
-    renderOutputAtBottom(state);
+    //renderOutputAtBottom(state);
 
-    renderInputAtTop(state);
+    //renderInputAtTop(state);
 }
 
 export function sortABCInputTokenToString(a: number) {

@@ -32,9 +32,9 @@ export function drawBlockInfo(state: IProgramState) {
 
         let pad = 0.4;
         state.render.sharedRender.activePhase = RenderPhase.Opaque;
-        drawRoundedRect(state.render, new Vec3(-textW / 2 - pad, -textOpts.size - pad * 2, 0), new Vec3(textW / 2 + pad, 0, 0), bgColor, mtx, scale * 0.4);
+        //drawRoundedRect(state.render, new Vec3(-textW / 2 - pad, -textOpts.size - pad * 2, 0), new Vec3(textW / 2 + pad, 0, 0), bgColor, mtx, scale * 0.4);
 
         state.render.sharedRender.activePhase = RenderPhase.Overlay;
-        drawText(state.render.modelFontBuf, text, -textW / 2, -textOpts.size - pad, textOpts);
+        //drawText(state.render.modelFontBuf, text, -textW / 2, -textOpts.size - pad, textOpts);
     }
 }

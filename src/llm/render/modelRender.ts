@@ -190,7 +190,7 @@ export function renderModel(state: IProgramState) {
     uploadAllTris(args.triRender);
     uploadAllText(args.modelFontBuf);
 
-    renderAllBlocks(blockRender, layout, modelMtx, camPos, lightPosArr, lightColorArr);
+    //renderAllBlocks(blockRender, layout, modelMtx, camPos, lightPosArr, lightColorArr);
 
     args.sharedRender.activePhase = RenderPhase.Opaque;
 
@@ -206,7 +206,7 @@ export function renderModel(state: IProgramState) {
 
     writeModelViewUbo(args.sharedRender, modelMtx, viewMtx);
 
-    renderAllThreads(args.threadRender);
+    //renderAllThreads(args.threadRender);
 
     gl.polygonOffset(-1.0, -2.0);
 

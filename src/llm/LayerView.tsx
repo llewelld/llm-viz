@@ -218,9 +218,7 @@ export function LayerView() {
 
     return <div className={s.view}>
         <Resizer id={"llm-sidebar"} className={"flex-1"} vertical={!layout.isDesktop} defaultFraction={0.4}>
-            {layout.isDesktop && sidebar}
             {mainView}
-            {!layout.isDesktop && sidebar}
         </Resizer>
     </div>;
 }

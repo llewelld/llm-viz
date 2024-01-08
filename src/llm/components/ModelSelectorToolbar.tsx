@@ -46,11 +46,11 @@ export const ModelSelectorToolbar: React.FC<{
         // new Vec3(-1.771, 0.750, -4.470), new Vec3(270.000, 4.500, 0.739)
 
         let obj = layout.residual0;
-        let modelTarget = new Vec3(obj.x, obj.y, obj.z);
+        let modelTarget = new Vec3(obj.x, obj.y + 6000, obj.z);
         let modelMtx = progState.camera.modelMtx.mul(Mat4f.fromTranslation(example.offset))
 
         let center = modelMtx.mulVec3Proj(modelTarget);
-        let zoom = progState.currExampleId === -1 ? 0.7 : 4;
+        let zoom = progState.currExampleId === -1 ? 170 : 170;
         progState.camera.desiredCamera = {
             center, angle: new Vec3(270, 4.5, zoom),
         };
@@ -60,8 +60,8 @@ export const ModelSelectorToolbar: React.FC<{
 
     return <div className='absolute top-0 left-0 flex flex-col'>
         <div className='mt-2 ml-2 flex flex-row'>
-            {makeButton(0)}
             {makeButton(-1)}
+            {makeButton(0)}
             {makeButton(1)}
             {makeButton(2)}
         </div>

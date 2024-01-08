@@ -99,6 +99,7 @@ export function genModelViewMatrices(state: IProgramState, layout: IModelLayout,
 }
 
 export function camScaleToScreen(state: IProgramState, modelPt: Vec3) {
+    console.log("Camera: " + state.camera.center + ", " + state.camera.angle)
     let camDist = state.camera.camPosModel.dist(modelPt);
     return camDist / state.render.size.y * 5.0;
 }
